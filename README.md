@@ -85,3 +85,66 @@ This project follows a **service-oriented architecture** suitable for fintech sy
 
 ## 📁 Project Structure (Simplified)
 
+app/
+├── controllers/
+│ └── api/v1/
+│ ├── payments_controller.rb
+│ ├── subscriptions_controller.rb
+│ └── webhooks_controller.rb
+├── services/
+│ └── stripe/
+│ ├── create_customer.rb
+│ ├── create_subscription.rb
+│ ├── cancel_subscription.rb
+│ └── webhook_handler.rb
+├── models/
+│ ├── user.rb
+│ ├── subscription.rb
+│ └── payment.rb
+
+
+
+
+---
+
+## 🧪 Testing & Validation
+
+- Stripe Test Mode used throughout
+- Webhook events tested via Stripe CLI
+- Edge cases handled:
+  - duplicate events
+  - delayed payments
+  - failed invoices
+
+---
+
+## ⚠️ Disclaimer
+
+This project is intended for **demonstration and learning purposes**.
+It represents **production-grade patterns**, not a complete drop-in solution.
+
+No real customer data, keys, or production credentials are included.
+
+---
+
+## 🤝 Who Is This For?
+
+- Fintech startups
+- SaaS businesses using subscriptions
+- Clients evaluating Stripe expertise
+- Teams looking for clean payment architecture examples
+
+---
+
+## 👨‍💻 Author
+
+**Mohd Ali Khan**  
+Senior iOS & Backend Engineer – Fintech & Payments
+
+- GitHub: https://github.com/makgituser
+- Upwork: *https://www.upwork.com/freelancers/mohdalik4*
+
+---
+
+⭐ If you’re a client reviewing this repository:  
+Feel free to reach out to discuss payment flows, architecture, or custom fintech requirements.
